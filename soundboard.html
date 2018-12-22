@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sound Board</title>
+	<link rel="stylesheet" type="text/css" href="soundboard.css">
+</head>
+<body>
+
+	<div id="flexContainer">
+		<table>
+			<tr>
+				<td class="active" id="cell1" onclick='changeSound("cell1", 0)'>
+					
+				</td>
+				<td id="cell2" onclick='changeSound("cell2", 1)'>
+					
+				</td>
+				<td id="cell3" onclick='changeSound("cell3", 2)'>
+					
+				</td>
+				<td id="cell4" onclick='changeSound("cell4", 3)'>
+					
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+<!-- 	<audio id="alarm" src="sounds/watch-alarm.mp3"></audio>
+	<audio id="bell" src="sounds/desk-bell.mp3"></audio>
+	<audio id="fireTruck" src="sounds/fire-truck.mp3"></audio>
+	<audio id="slotMachine" src="sounds/slot-machine.mp3"></audio> -->
+
+	
+	<div id="flexContainer">
+		<div id="buttonContainer">
+			<form action="">
+				<h2>Try a Sound!</h2>
+				<input type="button" value="1. Alarm" onclick='playPause("watch-alarm")' style="background:black; color:white">
+				<input type="button" value="2. Fire Truck" onclick='playPause("fire-truck")' style="background:red; color:white">
+				<input type="button" value=" 3.Bell" onclick='playPause("desk-bell")' style="background:grey; color:white">
+				<input type="button" value="4. Slot Machine" onclick='playPause("slot-machine")' style="background:orange; color:white">
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="soundboard.js"></script>
+</body>
+</html>
